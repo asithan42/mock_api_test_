@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
     try {
       List<Map<String, dynamic>> data = await dbHelper.getAllItems();
       for (var item in data) {
-        // Post each item to your API
+      
         await apiService.postData(item);
       }
       print("Data uploaded to API");
@@ -110,6 +110,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: clearDatabase,
                 child: const Text("Clear Database"),
               ),
+              const SizedBox(height: 20),
               const SizedBox(height: 20),
               const Text(
                 "Database Data:",
