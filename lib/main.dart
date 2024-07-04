@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Mock API Example"),
+        title: const Text("Mock API Test"),
       ),
       body: SingleChildScrollView(
         child: Center(
